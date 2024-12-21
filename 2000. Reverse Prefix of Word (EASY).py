@@ -16,7 +16,7 @@ Reverse the part of word from 0 to 3 (inclusive), the resulting string is "dcbae
 
 word = "abcdefd" 
 ch = "d"
-def reversePrefix(word, ch):
+def reversePrefix(word, ch): #Obviously can be done in a one-liner, but anyone using two-pointer is a fool and overengineered a solution 
     toasting = ""
     word2 = "" #serve no meeaning except True or False check
     for char in word:
@@ -26,6 +26,5 @@ def reversePrefix(word, ch):
                 toasting = toasting[::-1]
                 word2 += toasting #set the check to False
     return toasting
-
 
 print(reversePrefix(word, ch))
